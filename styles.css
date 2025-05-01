@@ -44,6 +44,23 @@ nav {
     z-index: 1000;
 }
 
+.poem-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.poem-wrapper pre {
+    text-align: left;
+    font-family: 'Georgia', serif;
+    white-space: pre-wrap;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    max-width: 800px;
+    width: 100%;
+}
+
+
 .nav-list {
     list-style: none;
     display: flex;
