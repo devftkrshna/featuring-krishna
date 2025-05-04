@@ -4,6 +4,7 @@ const blogPosts = [
 
 const poems = [
     { id: 1, title: "Thak Chuka Hu", date: "2025-05-01", excerpt: "Thak chuka hoon zindagi ki bhaag-daud se...", url: "Poem1.html" },
+     { id: 2, title: "जब... शिव साथ थे", date: "2025-05-04", excerpt: "जब आँखें खुलीं, शिव का प्रकाश था...", url: "Poem2.html" },
 ];
 
 const stories = [
