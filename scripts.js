@@ -81,4 +81,28 @@ function loadPostLists() {
 document.addEventListener('DOMContentLoaded', () => {
     loadHighlights();
     loadPostLists();
+
+    // Hamburger menu toggle
+    const hamburger = document.getElementById('hamburger');
+    const navList = document.querySelector('.nav-list');
+    if (hamburger && navList) {
+        hamburger.addEventListener('click', () => {
+            navList.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+    }
+
+    // Scroll to top button
+    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            scrollToTopBtn.style.display = 'flex';
+        } else {
+            scrollToTopBtn.style.display = 'none';
+        }
+    });
+
+    scrollToTopBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
 });

@@ -12,6 +12,11 @@
         <div class="container">
             <h1 class="site-title">Featuring Krishna</h1>
             <nav>
+                <div class="hamburger" id="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
                 <ul class="nav-list">
                     <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="blog.html">Blog</a></li>
@@ -22,26 +27,30 @@
         </div>
     </header>
     <main class="container">
-        <section id="highlights-blog">
+        <section class="hero">
+            <h2>Welcome to Featuring Krishna</h2>
+            <p>Explore inspiring blogs, beautiful poems, and captivating stories.</p>
+        </section>
+        <section id="highlights-blog" class="card-section">
             <h2>Blog Highlights</h2>
-            <ul id="blog-highlights" class="highlights-list">
+            <ul id="blog-highlights" class="highlights-list card-list">
                 <!-- Blog highlights will be loaded here by JS -->
             </ul>
-            <p><a href="blog.html">See all blog posts &raquo;</a></p>
+            <p><a href="blog.html" class="see-all-link">See all blog posts &raquo;</a></p>
         </section>
-        <section id="highlights-poems">
+        <section id="highlights-poems" class="card-section">
             <h2>Poems Highlights</h2>
-            <ul id="poems-highlights" class="highlights-list">
+            <ul id="poems-highlights" class="highlights-list card-list">
                 <!-- Poems highlights will be loaded here by JS -->
             </ul>
-            <p><a href="poems.html">See all poems &raquo;</a></p>
+            <p><a href="poems.html" class="see-all-link">See all poems &raquo;</a></p>
         </section>
-        <section id="highlights-stories">
+        <section id="highlights-stories" class="card-section">
             <h2>Stories Highlights</h2>
-            <ul id="stories-highlights" class="highlights-list">
+            <ul id="stories-highlights" class="highlights-list card-list">
                 <!-- Stories highlights will be loaded here by JS -->
             </ul>
-            <p><a href="stories.html">See all stories &raquo;</a></p>
+            <p><a href="stories.html" class="see-all-link">See all stories &raquo;</a></p>
         </section>
     </main>
     <footer>
@@ -49,5 +58,6 @@
             <p>© 2024 Featuring Krishna. All rights reserved.</p>
         </div>
     </footer>
+    <button id="scrollToTopBtn" title="Scroll to top">&#8679;</button>
 </body>
 </html>
